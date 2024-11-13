@@ -19,3 +19,221 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Effetto di scrittura per "DF" */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typewriter {
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  width: 0;
+  animation: typewriter 2s steps(10, end) forwards;
+}
+
+/* Effetto di scrittura per "BARBERSHOP" con ritardo */
+@keyframes typewriter2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typewriter2 {
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  width: 0;
+  animation: typewriter2 2s steps(10, end) forwards;
+  animation-delay: 1s;
+}
+
+/* Transizione per le linee */
+@keyframes slideIn {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1.5s ease forwards;
+}
+
+/* Dissolvenza generale */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 2.5s;
+}
+/* Effetto di entrata dall'alto */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Effetto di dissolvenza */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Effetto di entrata dal basso */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Delay per le animazioni successive */
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+}
+/* Effetto di dissolvenza */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Effetto di entrata dall'alto */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Effetto di entrata dalla destra */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 1s ease forwards;
+}
+
+/* Effetto di entrata dall'alto per il titolo */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Delay per l'animazione di entrata */
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+}
+
+.delay-900 {
+  animation-delay: 0.9s;
+}
+
+.delay-1100 {
+  animation-delay: 1.1s;
+}
+
+.delay-1300 {
+  animation-delay: 1.3s;
+}
+
+.delay-1500 {
+  animation-delay: 1.5s;
+}
+
+.delay-1600 {
+  animation-delay: 1.6s;
+}
+/* Effetto di transizione fluido per il cambiamento di colore del link */
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+/* Animazione per il pulsante Book Now */
+a:hover {
+  transform: scale(1.05);
+}
